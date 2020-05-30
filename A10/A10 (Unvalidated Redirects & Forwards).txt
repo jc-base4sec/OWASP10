@@ -1,0 +1,3 @@
+A10 (Unvalidated Redirects & Forwards)
+	* Unvalidated Redirects & Forwards (1) - bWAPP
+		- Solo modificar el valor de la variable que redirige

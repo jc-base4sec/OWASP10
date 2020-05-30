@@ -1,0 +1,13 @@
+A8 (Cross site request forgery)
+
+	* CSRF (Transfer Amount) - bWAPP
+		- Modificar valor y secret utilizando código HTML
+
+	* Directory Traversal - Files - bWAPP
+		- /etc/passwd
+
+	* Server-Side Request Forgery - WebGoat
+		- Resolver los retos usando burp
+
+Files:
+	csrf_2.php

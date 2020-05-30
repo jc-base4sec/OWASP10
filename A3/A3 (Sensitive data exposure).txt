@@ -1,0 +1,15 @@
+A3 (Sensitive data exposure)
+	* BAse64 encoding - bWAPP
+		- En la cookie: secret=QW55IGJ1Z3M/ --> Any bugs?
+
+	* HTML5 Web Storage - bWAPP
+		- Revisar codigo fuente y buscar credenciales
+
+	* Host Header Attack (Cache Poisoning) - bWAPP
+		- Cuando la pagina carga modificar el Host:
+
+	* Text File - bWAPP
+		- Crar archivo con credenciales usado por Phishing
+
+	* Clear Text HTTP (Credentials) - bWAPP
+		- Uso de Wireshark en localhost y enviar credenciales

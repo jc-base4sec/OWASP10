@@ -1,0 +1,6 @@
+A5 (Broken Access Control)
+	* Insecure DOR (Order Tickets) - bWAPP
+		- Modificamos los valores para dejar en 0 el total de Euros.
+
+	* Insecure DOR (Reset Secret) - bWAPP
+		- Modificamos el valor del usuario en el request y cambiamos el secret y validamos en phpmyadmin

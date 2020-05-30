@@ -1,0 +1,16 @@
+A2 (Broken Authentication)
+		* Insecure Login Forms - bWAPP
+			- Revisar codigo fuente
+
+		* Administrative Portals - bWAPP
+			- Modificar el valor de admin en la url
+
+		* Password attack - bWAPP
+			- Uso de intruder y wordlist
+
+		* CAPTCHA Bypassing - bWAPP
+			- Tomar el request, enviar a Intruder usar "Cluster Bomb/Simple list" en user&pass 
+			luego agreagar una lista de usuarios y el mensaje de error "Invalid credentials! Did you forgot your password?"
+			- Tomar el request con usuarios validos, enviar a Intruder usar "Sniper/Brute force" en captcha, modificar el ultimo byte "ABCDE{F}"
+			y  agregar el mensaje de error "Incorrect CAPTCHA!"
+			- Bypass mediante lectura de imagen

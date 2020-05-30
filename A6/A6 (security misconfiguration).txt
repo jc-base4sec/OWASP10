@@ -1,0 +1,16 @@
+A6 (security misconfiguration)
+	* Robots File - bWAPP
+		- solo realizar lectura y validar los directorios
+
+	* Cross-Origin Resource Sharing (AJAX) - bWAPP/portswigger
+		- Hacer request a http://192.168.18.60/bWAPP/bWAPP/secret-cors-1.php y capturar con un proxy par avisualiar "Access-Control-Allow-Origin: *"
+		- LAB https://portswigger.net/web-security/cors
+			Nomb: b4s
+			User: barron.tavius@andsee.org
+			Pass: tHDx=g-dX4p59569Ho!_7PiR&-w7E89H
+		- Utilizar ExploitPOC HTML
+
+file:
+	secret-cors-1.php
+	secret-cors-2.php
+	secret-cors-3.php

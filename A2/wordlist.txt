@@ -1,0 +1,9 @@
+admin
+hacker
+password
+123456
+hackerman
+base4sec
+bug
+anonymous
+ftp
